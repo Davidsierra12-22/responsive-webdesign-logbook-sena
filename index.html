@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADSO - Remote Work Productivity Project</title>
+    <style>
+        /* Diseño moderno e interfaz limpia con colores de la industria de software */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        header {
+            background: linear-gradient(135deg, #1e3a8a, #0f172a);
+            color: #ffffff;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 3px solid #3b82f6;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            letter-spacing: 0.5px;
+        }
+        header p {
+            margin: 10px 0 0 0;
+            color: #93c5fd;
+            font-size: 1.1rem;
+        }
+        nav {
+            background-color: #1e293b;
+            padding: 12px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+        }
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #3b82f6;
+        }
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 25px;
+            background-color: #1e293b; /* Tarjeta principal gris oscuro */
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+        }
+        section {
+            margin-bottom: 40px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid #334155;
+        }
+        section:last-child {
+            border-bottom: none;
+        }
+        h2 {
+            color: #3b82f6;
+            border-left: 4px solid #3b82f6;
+            padding-left: 10px;
+            margin-top: 0;
+        }
+        h3 {
+            color: #60a5fa;
+            margin-bottom: 5px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        strong {
+            color: #f1f5f9;
+        }
+        /* Contenedor especial de los audios */
+        .audio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .audio-card {
+            background-color: #0f172a;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.2);
+        }
+        .audio-card h4 {
+            margin: 0 0 15px 0;
+            color: #38bdf8;
+            font-size: 1.2rem;
+        }
+        .audio-card p {
+            margin: 0 0 15px 0;
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+        audio {
+            width: 100%;
+            outline: none;
+        }
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #0f172a;
+            color: #64748b;
+            font-size: 0.9rem;
+            margin-top: 40px;
+            border-top: 1px solid #1e293b;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <!-- SECCIÓN 1: REPRODUCTORES DE AUDIO SEPARADOS POR INTEGRANTE -->
+        <section id="audio-section">
+            <h2>Oral Socialization (Team Speaking)</h2>
+            <p>Listen to our team members present the project context, importance, and solutions in English:</p>
+            
+            <div class="audio-grid">
+                
+                <!-- AUDIO DE DAVID -->
+                <div class="audio-card">
+                    <h4>David Audio</h4>
+                    <p>Part 1: Introduction & Problem Context</p>
+                    <!-- REEMPLAZAR "david.mp3" CON TU ARCHIVO REAL -->
+                    <audio controls>
+                        <source src="audio_David.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <!-- AUDIO DE CRISTIAN -->
+                <div class="audio-card">
+                    <h4>Cristian Audio</h4>
+                    <p>Part 2: Why it Matters & First Solutions</p>
+                    <!-- REEMPLAZAR "cristian.mp3" CON SU ARCHIVO REAL -->
+                    <audio controls>
+                        <source src="audio_cristian.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+                <!-- AUDIO DE JEFFERSON -->
+                <div class="audio-card">
+                    <h4>Jefferson Audio</h4>
+                    <p>Part 3: Final Solutions & Logbook doubts</p>
+                    <!-- REEMPLAZAR "jefferson.mp3" CON SU ARCHIVO REAL -->
+                    <audio controls>
+                        <source src="audio_jefersson.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
